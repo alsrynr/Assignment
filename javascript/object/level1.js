@@ -57,9 +57,6 @@ const size   = 'size';
 shirt2[size] = 'large';
 console.log(box7)
 
-
-
-
 // Q8: Concatenate the 'firstName' and 'lastName' properties of the 'person' object with a space in between.
 // Expected output:
 // 'John Doe'
@@ -76,6 +73,15 @@ const cart9 = { item: 'Book', quantity: 2, total: 30 };
 // false
 const product10 = { name: 'Phone', price: 150 };
 
-let e = 100 in product10;
-console.log(e)
+let e =  product10.price;
+function check (e){
+if(e<100)
+  {
+    return true
+  }
+else{
+  return false
+}
+}
+check()
 
