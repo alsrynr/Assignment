@@ -7,11 +7,12 @@ const userDetails = {
     'gopal': 'tharu'
 }
 
-arr.map((item)=>{
+const z = arr.map((item)=>{
     if (userDetails[item]){
       return item +' '+ userDetails[item]
     }
    }).filter(item=>item)
+   console.log(z)
 
 
 
