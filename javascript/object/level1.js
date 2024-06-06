@@ -30,6 +30,8 @@ console.log(a * b)
 // Expected output:
 // { name: 'Alice', age: 35, city: 'New York' }
 const person4 = { name: 'Alice', age: 30, city: 'New York' };
+person4.age = 35
+console.log(person4)
 
 
 
