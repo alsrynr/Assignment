@@ -34,14 +34,20 @@ else{
   console.log(product3)
 }
 
+
+if(!product3.quantity)
+{
+  product3.quantity=10
+}
+
 // Q4: Check if all properties ('make', 'model', 'year') exist in the 'car' object.
 // Expected output:
 // false
 const car4 = { make: 'Toyota', year: 2021 };
 
-let result = car4.hasOwnProperty('make','model','year');
-//Object.keys==
-
+let result = 'make' in car4 && 'year'in car4 && 'model' in car4
+    
+ 
 // Q5: Create a copy of the 'student' object without modifying the original object.
 // Expected output:
 // { name: 'Alice', age: 20, grade: 'A' }
@@ -77,21 +83,17 @@ const data8 = { name: 'John', age: 25, city: 'New York' };
 Object.values(data8)
 
 // Q9: Check if any property in the 'book' object has a value of null.
-// Expected output:
+// Expected output: 
 // false
 const book9 = { title: 'JavaScript Basics', author: 'John Smith', year: 2020 };
-const isNull = Object.values(book9).every(value => {
-  if (value === null) {
-    return true;
-  }
-
-  return false;
-});
-console.log(isNull)
+Object.values(book9).includes(null)
 
 // Q10: Reverse the 'fullName' property value in the 'person' object.
 // Expected output:
 // 'doe John'
 const person10 = { fullName: 'John doe' };
+const arr = person10.fullName.split(" ")
+ arr.reverse().join(' ')
+
 
 
